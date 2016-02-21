@@ -1,0 +1,267 @@
+/* ------------ Style.css  ------------ */
+
+
+/* ------------ Main Page Styles  ------------ */
+
+body {
+	background-color: #d9c0c0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#wrapper {
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+	color: black;
+}
+
+h3 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+
+/* ------------ Header Styles  ------------ */
+
+nav {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+nav li {
+	list-style: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: white;
+}
+
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	display: block;
+	padding: 10px;
+}
+
+nav li:hover {
+	background-color: #738282;
+}
+
+header .profile-pic {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+#profile-pic-container {
+	background-color: #738282;
+	width: 75%;
+	margin: 45px auto 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.profile-text {
+	margin-bottom: 50px;
+}
+
+
+
+
+/* ------------ Portfolio Styles  ------------ */
+
+.portfolio-section {
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #585858;
+}
+
+.portfolio-item {
+	width: 95%;
+	margin: auto;
+}
+
+.portfolio li {
+	list-style: none;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.portfolio li p {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.portfolio h4 {
+	font-size: 1.5em;
+}
+
+
+
+
+/* ------------ Contact Styles  ------------ */
+
+#contact {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#contact a {
+	text-decoration: none;
+	color: #585858;
+	font-weight: bold;
+}
+
+.contact-list {
+	list-style: none;
+	margin: 15px;
+}
+
+#contact p {
+	margin-bottom: 50px;
+}
+
+
+
+
+/* ------------ Footer Styles  ------------ */
+
+.footer-right-align {
+	float:right;
+}
+
+.footer-left-align {
+	float:left;
+}
+
+
+hr { 
+	border: 0.5px solid #E5E5E5; /* Chrome and Safari */
+	background-color: #E5E5E5; /* Firefox and Opera */
+    color: #E5E5E5; /* IE7+ */
+	width: 90%;
+}
+
+footer p {
+	font-weight: bold;
+}
+
+footer a {
+	text-decoration: none;
+	color: #585858;
+}
+
+#footer-nav {
+	display: none;
+}
+
+
+
+
+/* ------------ Media Queries ----------*/
+
+
+/* ------------ Tablets  ------------ */
+@media only screen and (min-width: 768px) {
+
+
+nav li {
+	display: inline-block;
+	background-color: #d9c0c0;
+}
+
+nav li:hover {
+	background-color: #d9c0c0;
+}
+
+nav a:hover {
+	background-color: #d9c0c0;
+	color: white;
+}
+
+
+#profile-pic-container {
+	float: right;
+	width: 45%;
+	margin-top: 10px;
+}
+
+.profile-text {
+	float: left;
+	width: 45%;
+}
+
+.clearfix::after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.portfolio-section li {
+	width: 50%;
+	float:left;
+}
+
+
+#contact p {
+	max-width: 70%;
+	margin: 50px auto;
+}
+
+.remove {
+	display: none;
+}
+
+#footer-nav {
+	display: block;
+	margin-top: 0px;
+	text-align: right;
+}
+
+
+}
+
+
+
+
+/* ------------ Desktops  ----------- */
+@media only screen and (min-width: 1024px) {
+
+	.name {
+		float: left;
+	}
+
+	.main-nav  {
+		float: right;
+	}
+
+	.profile-text {
+		text-align: left;
+}
+
+.portfolio-section li {
+	width: 33.3%;
+	margin: 0 auto;
+}
+
+#contact p {
+	max-width: 60%;
+}
+
+
+}
